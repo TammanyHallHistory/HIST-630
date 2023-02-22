@@ -6,7 +6,7 @@
   <teiHeader> 
       <fileDesc>
          <titleStmt>
-            <title>Plunkitt of Tammany Hall: A Series of Very Plain Talks on Very Practical Politics</title>
+            <title type="main">Plunkitt of Tammany Hall:</title> <title type="sub"> A Series of Very Plain Talks on Very Practical Politics</title>
          </titleStmt>
          <publicationStmt>
             <publisher>McClure, Phillips &amp; Co.</publisher>

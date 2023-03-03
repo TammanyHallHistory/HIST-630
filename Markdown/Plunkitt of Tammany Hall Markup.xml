@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Plunkitt of Tammany Hall Markup</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Digital Methods Class Publication</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Born digital</p>
+         </sourceDesc>
+      </fileDesc>
+  </teiHeader>
+   <standOff>
+      <listPerson>
+         <person n="1" xml:id="person001">
+            <persName>George Washington Plunkitt</persName>
+            <note>Author of the speeches published as Plunkitt of Tammany Hall. He is known variously as George Washington Plunkitt, Plunkitt, and George W. Plunkitt"</note>
+            <affiliation>Tammany Hall, Democratic Party of New York</affiliation>
+            <sex value="m">male</sex>
+            <age>63</age>
+            <occupation>New York State Senator, Tammany Hall district leader</occupation>
+            <residence>Manhattan, New York City</residence>
+         </person>
+         <person n="2" xml:id="person002">
+            <persName>Lincoln Steffens</persName>
+            <affiliation>Pro-reform (anti-Tammany)</affiliation>
+            <sex value="m">male</sex>
+            <residence>New York City</residence>
+            <occupation>Journalist, author of "The Shame of the Cities"</occupation>
+         </person>
+         <!-- etc.-->
+      </listPerson>
+      <listPlace>
+         <place n="1" xml:id="place001">
+            <placeName>New York City</placeName>
+            <region>New York State</region>
+            <note>The largest city and financial capital of the United States in 1905. A major destination for immigrants to the United States. The city's Democratic Party headquarted at Tammany Hall dominated the city's politics from 1857 to 1934</note>
+         </place>
+         <place n="2" xml:id="place002">
+            <placeName>Philadelphia</placeName>
+            <region>Pennsylvania</region>
+            <note>A large city which unlike Democratic and Irish-run New York City, was run by native-born Americans and a Republican Party machine.</note>
+         </place>
+         <!-- etc.-->
+      </listPlace>
+      <listOrg>
+         <org n="1" xml:id="org001">
+            <orgName>Tammany Hall</orgName>
+            <desc>Democratic Party affiliate</desc>
+            <note>Tammany Hall can refer both to the actual building that served as the headquarters of the Democratic Party in New York City as well as a Metonymy for city's Democratic Party. However all references in this document are to latter. This institution is referred to as Tammany Hall, Tammany, The Democratic Party in the document.</note>
+         </org>
+         <org n="2" xml:id="org002">
+            <orgName>The Republican Party</orgName>
+            <note>The main rival to the Democratic Party in both New York City and across the United States. In major cities early in the twentieth century, the Republican party tended to earn support from Northern native-born Americans and German immigrants with the Democratic Party earning support from other immigrant groups and southern white native-born Americans. Plunkitt several times contrasts Tammany governance with the Republican machine in Philadelphia. They are referred to various as The Republicans, Republicans, the Philadelphia gang.</note>
+         </org>
+         <org n="3" xml:id="org003">
+            <orgName>Citizens Union</orgName>
+            <desc>Opposed to Tammany Hall</desc>
+            <note>A pro-reform organization that opposed Tammany Hall in several elections. Mostly made up of middle-class New Yorkers.</note>
+         </org>
+         <!-- etc.-->
+      </listOrg>
+   </standOff>
+</TEI>

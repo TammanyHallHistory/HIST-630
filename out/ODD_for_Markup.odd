@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Title</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>Publication Information</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Information about the source</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <schemaSpec ident="George_Washington_Plunkitt_Project" start="TEI">
+        <moduleRef key="header"/>
+        <moduleRef key="core" include="title"/>
+        <moduleRef key="tei"/>
+        <moduleRef key="textstructure"/>
+        <moduleRef key="namesdates" />
+      </schemaSpec>
+      <elementSpec module="namesdates" ident="persName" mode="change">
+        <content>
+          <sequence preserveOrder="true">
+          <elementRef key="forename"/>
+          <elementRef key="surname"/>
+          </sequence>
+        </content>
+        <attList>
+          <attDef ident="type" mode="change" usage="req">
+            <datatype>
+              <dataRef key="teidata.enumerated"/>
+            </datatype>
+            <valList>
+              <valItem ident="polOrg">
+                <gloss>Political Organization</gloss>
+                <desc>A faction of the Republican or Democratic parties of New York City</desc>
+              </valItem>
+                <valItem ident="polOffice">
+                  <gloss>Political Office</gloss>
+                  <desc>Indicates that this person holds or held this political office</desc>
+              </valItem>
+              <valItem ident="Irish">
+                <gloss>Irish</gloss>
+                <desc>Any term that indicates the referrent is of Irish or Irish American descent</desc>
+                </valItem>
+                <valItem ident="American">
+                  <gloss>American</gloss>
+                  <desc>Any term that indicates the referrent identifies as a native born American without immigrant identity</desc>
+                  <valItem ident="journ">
+                    <gloss>Journalist</gloss>
+                    <desc>Indicates that the referrent was a journalist</desc>
+              </valItem>
+            </valList>
+          </attDef>
+        </attList>
+      </elementSpec>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Plunkitt of Tammany Hall: A Series of Very Plain Talks on Very Practical
+               Politics</title>
+            <title>George Washington Plunkitt Project</title>
+            <author>Patrick Grigsby</author>
+         </titleStmt>
+         <publicationStmt>
+            <publisher> HIST 630 Digital Humanities Class</publisher>
+            <pubPlace>Texas A &amp;M University</pubPlace>
+            <date when="2023-02-22">22 February 2023</date>
+            <availability status="free">
+               <p>Text is avaliable as part of the public domain through Project Gutenberg <ref
+                     target="https://www.gutenberg.org/files/2810/2810-h/2810-h.htm"/></p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <author ref="#person001">
+                  <surname>George</surname><forename>Plunkitt</forename>
+               </author>
+               <title type="main">Plunkitt of Tammany Hall:</title>
+               <title type="sub"> A Series of Very Plain Talks on Very Practical Politics</title>
+               <publisher>McClure, Phillips &amp; Co.</publisher>
+               <pubPlace ref="place001">New York</pubPlace>
+               <availability>
+                  <p>Available under public domain</p>
+               </availability>
+               <date when="1905">1905</date>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>The goal of this project is is to document and better understand major concepts
+               behind the working of American political machines in early twentieth century New York
+               City.</p>
+         </projectDesc>
+         <editorialDecl>
+            <normalization>
+               <p>The text contains some deliberate mispelling and syntax errors to indicate
+                  Plunkitt's accent and working-class background. Because these mistakes convey
+                  important meaning about the author's views of Plunkitt, they have been reproduced
+                  exactly in the encoding below</p>
+            </normalization>
+            <quotation>
+               <p>Quotes are indicated with both quotation marks and the element tag
+                  <gi>quote</gi></p>
+            </quotation>
+         </editorialDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div n="6" type="chapter">
+            <head type="main">To Hold Your District: </head>
+            <head type="sub"> Study Human Nature and Act Accordin' </head>
+            <p>There's only one way to hold a district: you must study human nature and act
+               accordin'. You can't study human nature in books. Books is a hindrance more than
+               anything else. If you have been to college, so much the worse for you. You'll have to
+               unlearn all you learned before you can get right down to human nature, and unlearnin'
+               takes a lot of time. Some men can never forget what they learned at college. Such men
+               may get to be district leaders by a fluke, but they never last. </p>
+
+            <p>To learn real human nature you have to go among the people, see them and be seen..1
+               know every man, woman, and child in the <placeName ref="place003">Fifteenth District</placeName>,
+               except them that's been born this summer—and I know some of them, too. I know what
+               they like and what they don't like, what they are strong at and what they are weak
+               in, and I reach them by approachin' at the right side.</p>
+
+            <p>For instance, here's how I gather in the young men. I hear of a young feller that's
+               proud of his voice, thinks that he can sing fine. I ask him to come around to
+                  <placeName ref="place004">Washington Hall</placeName> and join our Glee Club. He comes and sings,
+               and he's a follower of <persName ref="#person001">Plunkitt</persName> for life.
+               Another young feller gains a reputation as a baseball player in a vacant lot. I bring
+               him into our baseball club. That fixes him. You'll find him workin' for my ticket at
+               the polls next election day. Then there's the feller that likes rowin' on the river,
+               the young feller that makes a name as a waltzer on his block, the young feller that's
+               handy with his dukes—I rope them all in by givin' them opportunities to show
+               themselves off. I don't trouble them with political arguments. I just study human
+               nature and act accordin'.</p>
+
+            <p>But you may say this game won't work with the high-toned fellers, the fellers that go
+               through college and then join the <orgName ref="org004">Citizens' Union</orgName>. Of course it
+               wouldn't work. I have a special treatment for them. I ain't like the patent medicine
+               man that gives the same medicine for all diseases. The <orgName ref="org004">Citizens'
+                  Union</orgName> kind of a young man! I love him! He's the daintiest morsel of the
+               lot, and he don't often escape me.</p>
+
+            <p>Before telling you how I catch him, let me mention that before the election last
+               year, the <orgName ref="org004">Citizens' Union</orgName> said they had four hundred or five
+               hundred enrolled voters in my district. They had a lovely headquarters, too,
+               beautiful roll-top desks and the cutest rugs in the world. If I was accused of havin'
+               contributed to fix up the nest for them, I wouldn't deny it under oath. What do I
+               mean by that? Never mind. You can guess from the sequel, if you're sharp.</p>
+
+            <p>Well, election day came. The <orgName ref="org004">Citizens' Union's</orgName>
+               candidate for <title>Senator</title>, who ran against me, just polled five votes in
+               the district, while I polled something more than 14,000 votes. What became of the 400
+               or 500 <orgName ref="org004">Citizens' Union</orgName> enrolled voters in my
+               district? Some people guessed that many of them were good <persName ref="person001"
+                  >Plunkitt</persName> men all along and worked with the <orgName>Cits</orgName>
+               just to bring them into the <persName ref="#person001">Plunkitt</persName> camp by
+               election day. You can guess that way, too, if you want to. I never contradict stories
+               about me, especially in hot weather. I just call your attention to the fact that on
+               last election day 395 <orgName ref="org004">Citizens' Union</orgName> enrolled
+               voters in my district were missin' and unaccounted for.</p>
+
+            <p>I tell you frankly, though, how I have captured some of the <orgName ref="org004">Citizens'
+                  Union's</orgName> young men. I have a plan that never fails. I watch the City
+               Record to see when there's civil service examinations for good things. Then I take my
+               young <name ref="org004">Cit</name> in hand, tell him all about the good thing and get him worked
+               up till he goes and takes an examination. I don't bother about him any more. It's a
+               cinch that he comes back to me in a few days and asks to join <placeName ref="org001"
+                  >Tammany Hall</placeName>. Come over to <placeName>Washington Hall</placeName>
+               some night and I'll show you a list of names on our roll' marked
+                  <quote>"C.S."</quote> which means, <quote>"bucked up against civil
+                  service."</quote></p>
+
+            <p>As to the older voters, I reach them, too. No, I don't send them campaign literature.
+               That's rot. People can get all the political stuff they want to read—and a good deal
+               more, too—in the papers. Who reads speeches, nowadays, anyhow? It's bad enough to
+               listen to them. You ain't goin' to gain any votes by stuffin' the letter boxes with
+               campaign documents. Like as not you'll lose votes for there's nothin' a man hates
+               more than to hear the letter carrier ring his bell and go to the letter box expectin'
+               to find a letter he was lookin' for, and find only a lot of printed politics. I met a
+               man this very mornin' who told me he voted the <orgName ref="org002"
+                  >Democratic</orgName> State ticket last year just because the <orgName
+                  ref="org003">Republicans</orgName> kept crammin' his letter box with campaign
+               documents.</p>
+
+            <p>What tells in holdin' your grip on your district is to go right down among the poor
+               families and help them in the different ways they need help. I've got a regular
+               system for this. If there's a fire in <placeName type="street">Ninth</placeName>,
+                  <placeName type="street">Tenth</placeName>, or <placeName type="street">Eleventh
+                  Avenue</placeName>, for example, any hour of the day or night, I'm usually there
+               with some of my election district captains as soon as the fire engines. If a family
+               is burned out I don't ask whether they are <orgName type="political" ref="org002"
+                  >Republicans</orgName> or <orgName type="political" ref="org001"
+                  >Democrats</orgName>, and I don't refer them to the <orgName type="charity"
+                  >Charity Organization Society</orgName>, which would investigate their case in a
+               month or two and decide they were worthy of help about the time they are dead from
+               starvation. I just get quarters for them buy clothes for them if their clothes were
+               burned up, and fix them up till they get things runnin' again. It's philanthropy, but
+               it's politics, too—mighty good politics. Who can tell how many votes one of these
+               fires bring me? The poor are the most grateful people in the world, and, let me tell
+               you, they have more friends in their neighborhoods than the rich have in theirs.</p>
+
+            <p>If there's a family in my district in want I know it before the charitable societies
+               do, and me and my men are first on the ground. I have a special corps to look up such
+               cases. The consequence is that the poor look up to <persName ref="#person001">George
+                  W. Plunkitt</persName> as a father, come to him in trouble—and don't forget him on
+                  <date>election day</date>.</p>
+
+            <p>Another thing, I can always get a job for a deservin' man. I make it a point to keep
+               on the track of jobs, and it seldom happens that I don't have a few up my sleeve
+               ready for use. I know every big employer in the district and in the whole city, for
+               that matter, and they ain't in the habit of sayin' no to me when I ask them for a
+               job.</p>
+
+            <p>And the children—the little roses of the district! Do I forget them? Oh, no! They
+               know me, every one of them, and they know that a sight of Uncle George and candy
+               means the same thing. Some of them are the best kind of vote-getters. I'll tell you a
+               case. Last year a little <placeName type="street">Eleventh Avenue</placeName>
+               rosebud, whose father is a <orgName type="political" ref="org003">Republican</orgName>, caught
+               hold of his whiskers on election day and said she wouldn't let go till he'd promise
+               to vote for me. And she didn't.</p>
+         </div>
+
+
+         <div n="7" type="chapter">
+            <head>On The Shame of the Cities</head>
+            <p>I've been readin' a book by <persName type="journalist" ref="person002">Lincoln
+                  Steffens</persName> on <title type="book">'The Shame of the Cities'</title>.
+                  <persName type="journalist" ref="person002">Steffens</persName> means well but,
+               like all reformers, he don't know how to make distinctions. He can't see no
+               difference between honest graft and dishonest graft and, consequent, he gets things
+               all mixed up. There's the biggest kind of a difference between political looters and
+               politicians who make a fortune out of politics by keepin' their eyes wide open. The
+               looter goes in for himself alone without considerin' his organization or his city.
+               The politician looks after his own interests, the organization's interests, and the
+               city's interests all at the same time. See the distinction? For instance, I ain't no
+               looter. The looter hogs it. I never hogged. I made my pile in politics, but, at the
+               same time, I served the organization and got more big improvements for <placeName
+                  ref="place001">New York City</placeName> than any other livin' man. And I never
+               monkeyed with the penal code.</p>
+
+            <p>The difference between a looter and a practical politician is the difference between
+               the <placeName ref="place002">Philadelphia</placeName>
+               <orgName ref="org003">Republican gang</orgName> and <orgName ref="org001">Tammany Hall</orgName>.
+                  <persName type="journalist" ref="person002">Steffens</persName> seems to think they're both about
+               the same; but he's all wrong. The <orgName ref="org003">Philadelphia crowd</orgName>
+               runs up against the penal code. <orgName ref="org001">Tammany</orgName> don't. The
+                  <orgName ref="org003">Philadelphians</orgName> ain't satisfied with robbin' the bank of all its
+               gold and paper money. They stay to pick up the nickels and pennies and the cop comes
+               and nabs them. <orgName ref="org001">Tammany</orgName> ain't no such fool. Why, I
+               remember, about fifteen or twenty years ago, a Republican superintendent of the
+                  <placeName>Philadelphia almshouse</placeName> stole the zinc roof off the buildin'
+               and sold it for junk. That was carryin' things to excess. There's a limit to
+               everything, and the <orgName ref="org003">Philadelphia Republicans</orgName> go
+               beyond the limit. It seems like they can't be cool and moderate like real
+               politicians. It ain't fair, therefore, to class <orgName ref="org001">Tammany</orgName> men with
+               the <orgName ref="org003">Philadelphia gang.</orgName> Any man who undertakes to
+               write political books should never for a moment lose sight of the distinction between
+               honest graft and dishonest graft, which I explained in full in another talk. If he
+               puts all kinds of graft on the same level, he'll make the fatal mistake that
+                  <persName type="journalist" ref="person002">Steffens</persName> made and spoil his
+               book.</p>
+
+            <p>A big city like <placeName ref="place001">New York</placeName> or <placeName
+                  ref="place002">Philadelphia</placeName> or <placeName>Chicago</placeName> might be
+               compared to a sort of <placeName>Garden of Eden</placeName>, from a political point
+               of view. It's an orchard full of beautiful apple trees. One of them has got a big
+               sign on it, marked: "Penal Code Tree—Poison." The other trees have lots of apples on
+               them for all. Yet the fools go to the Penal Code Tree. Why? For the reason, I guess,
+               that a cranky child refuses to eat good food and chews up a box of matches with
+               relish. I never had any temptation to touch the Penal Code Tree. The other apples are
+               good enough for me, and 0 Lord! how many of them there are in a big city!</p>
+
+            <p><persName type="journalist" ref="person002">Steffens</persName> made one good point
+               in his book. He said he found that <placeName ref="place002"
+               >Philadelphia</placeName>, ruled almost entirely by <orgName ref="org006">Americans</orgName>, was
+               more corrupt than <placeName ref="place001">New York</placeName>, where the
+                  <orgName ref="org005">Irish</orgName> do almost all the governin'. I could have told him that
+               before he did any investigatin' if he had come to me. The <orgName ref="org005"> Irish </orgName> was born to rule, and
+               they're the honestest people in the world. Show me the <orgName ref="org005">Irishman</orgName>
+               who would steal a roof off an almhouse! He don't exist. Of course, if an
+                  <orgName ref="org005">Irishman</orgName> had the political pull and the roof was much worn, he
+               might get the city authorities to put on a new one and get the contract for it
+               himself, and buy the old roof at a bargain—but that's honest graft. It's goin' about
+               the thing like a gentleman, and there's more money in it than in tearin' down an old
+               roof and cartin' it to the junkman's—more money and no penal code.</p>
+
+            <p>One reason why the <orgName ref="org005">Irishman</orgName> is more honest in politics than many
+               <orgName ref="org006"><rs type="Americans">Sons of the Revolution</rs></orgName> is that he is grateful to the
+               country and the city that gave him protection and prosperity when he was driven by
+               oppression from the <rs type="Ireland">Emerald Isle</rs>. Say, that sentence is fine,
+               ain't it? I'm goin' to get some literary feller to work it over into poetry for next
+                  <date>St. Patrick's Day</date> dinner.</p>
+
+            <p>Yes, the <orgName ref="org0005">Irishman</orgName> is grateful. His one thought is to serve the
+               city which gave him a home. He has this thought even before he lands in <placeName
+                  ref="place001">New York</placeName>, for his friends here often have a good place
+               in one of the city departments picked out for him while he is still in the old
+               country. Is it any wonder that he has a tender spot in his heart for old <placeName
+                  ref="place001">New York</placeName> when he is on its salary list the mornin'
+               after he lands?</p>
+
+            <p>Now, a few words on the general subject of the so called shame of cities. I don't
+               believe that the government of our cities is any worse, in proportion to
+               opportunities, than it was fifty years ago. I'll explain what I mean by "in
+               proportion to opportunities." A half a century ago, our cities were small and poor.
+               There wasn't many temptations lyin' around for politicians. There was hardly anything
+               to steal, and hardly any opportunities for even honest graft. A city could count its
+               money every night before goin' to bed, and if three cents was missin', all the fire
+               bells would be rung. What credit was there in bein' honest under them circumstances'?
+               It makes me tired to hear of old codgers back in the thirties or forties boastin'
+               that they retired from politics without a dollar except what they earned in their
+               profession or business. If they lived today, with all the existin' opportunities,
+               they would be just the same as twentieth-century politicians. There ain't any more
+               honest people in the world just now than the convicts in Sing Sing. Not one of them steals anything. Why? Because they can't.
+               See the application?</p>
+
+            <p>Understand, I ain't defendin' politicians of today who steal. The politician who
+               steals is worse than a thief. He is a fool. With the grand opportunities all around
+               for the man with a political pull, there's no excuse for stealin' a cent. The point I
+               want to make is that if there is some stealin' in politics, it don't mean that the
+               politicians of 1905 are, as a class, worse than them of 1835. It just means that the
+               old-timers had nothin' to steal, while the politicians now are surrounded by all
+               kinds of temptations and some of them naturally—the fool ones—buck up against the
+               penal code. </p>
+         </div>
+      </body>
+   </text>
+</TEI>

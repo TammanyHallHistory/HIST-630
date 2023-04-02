@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Plunkitt of Tammany Hall Markup</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Digital Methods Class Publication</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Born digital</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <standOff>
+      <listPerson>
+         <person n="1" xml:id="person001">
+            <persName>George Washington Plunkitt</persName>
+            <persName>Plunkitt</persName>
+            <persName>George Plunkitt</persName>
+            <persName>Plunkitt of Tammany Hall</persName>
+            <note>Author of the speeches published as Plunkitt of Tammany Hall. </note>
+            <affiliation type="political">Tammany Hall, Democratic Party of New York</affiliation>
+            <affiliation type="religion">Roman Catholic</affiliation>
+            <sex value="m">male</sex>
+            <age>63</age>
+            <occupation>Tammany Hall politician</occupation>
+            <roleName type="political office, 1869-1873">New York State Assemblyman</roleName>
+            <roleName type="political office, 1884-1887, 1892-1893, 1899-1904">New york State Senator</roleName>
+            <residence type="city">New York City</residence>
+         </person>
+         <person n="2" xml:id="person002">
+            <persName>Lincoln Steffens</persName>
+            <affiliation type="political">Pro-reform (anti-Tammany)</affiliation>
+            <affiliation type="religion">Unknown</affiliation>
+            <sex value="m">male</sex>
+            <age>39</age>
+            <residence type="city">New York City</residence>
+            <occupation>Journalist, author of "The Shame of the Cities"</occupation>
+         </person>
+         <!-- etc.-->
+      </listPerson>
+      <listPlace>
+         <place n="1" xml:id="place001">
+            <placeName>New York City</placeName>
+            <region>New York State</region>
+            <note>The largest city and financial capital of the United States in 1905. A major destination for immigrants to the United States. The city's Democratic Party faction headquarted at Tammany Hall dominated the city's politics from 1857 to 1934</note>
+         </place>
+         <place n="2" xml:id="place002">
+            <placeName>Philadelphia</placeName>
+            <region>Pennsylvania</region>
+            <note>A large city which unlike Democratic and Irish-run New York City, was run by native-born Americans and a Republican Party machine.</note>
+         </place>
+         <place n="3" xml:id="place003">
+            <placeName>Fifteenth District</placeName>
+            <location>Midtown Manhattan, bordering the Hudson River</location>
+            <desc>New York City Assembly District</desc>
+            <note>Tammany Hall's local organizaiton in the Fifteenth Assembly District was led by George Washingotn Plunkitt.</note>
+         </place>
+         <placeName n="4" xml:id="place004">Washignton Hall</placeName>
+         <location><!--I'm working on this sitll. Multiple buildings are labeled as Washington Hall in New York City although it makes the most sense for it to be a locaiton on 280 Broadway Ave in the Fifteenth District --></location>
+         <desc>Location of a branch of Tammany Hall run by George Washington Plunkitt that sponsored various community services such as a Glee Club and baseball team</desc>
+         <!-- etc.-->
+      </listPlace>
+      <listOrg>
+         <org n="1" xml:id="org001">
+            <orgName type="political party faction">Tammany Hall</orgName>
+            <orgName>Tammany</orgName>
+            <orgName>the Hall</orgName>
+            <desc>Democratic Party affiliate</desc>
+            <note>Tammany Hall can refer both to the actual building that served as the headquarters of the Democratic Party in New York City as well as a loose Metonymy for city's Democratic Party. However all references in this document are to latter.</note>
+         </org>
+         <org n="2" xml:id="org002">
+            <orgName type="political party">The  Democratic Party</orgName>
+            <orgName>the democracy</orgName>
+            <desc>Made up of Tammany Hall and other affiliate organizaitons factions.</desc>
+            <note>The dominant political party in New York City during the Gilded Age and Progressive Era and one of the two major American political parties. </note>
+         </org>
+         <org n="3" xml:id="org003">
+            <orgName type="political party">The Republican Party</orgName>
+            <orgName>the Philadelphia gang</orgName>
+            <orgName>the Philadelphians</orgName>
+            <note>The main rival to the Democratic Party in both New York City and the nation. In major cities early in the twentieth century, the Republican party tended to earn support from Northern native-born Americans and German immigrants with the Democratic Party earning support from other immigrant groups and southern white native-born Americans. Plunkitt several times contrasts Tammany governance with the Republican machine in Philadelphia.</note>
+         </org>
+         <org n="4" xml:id="org004">
+            <orgName type="political party">Citizens Union</orgName>
+            <desc>Independent party opposed to Tammany Hall. Also called the Cit or Cits in the text.</desc>
+            <note>A pro-reform organization that opposed Tammany Hall in several elections. Mostly made up of middle-class New Yorkers.</note>
+         </org>
+         <org n="5" xml:id="org005">
+            <orgName type="Irishmen">
+               <desc>Often used as shorthand in this passage for Tammany Hall Democratic politicians to denote  the large number of Irish Americans involved in New York City Democratic politics</desc>
+            </orgName>
+         </org>
+         <org type="6" xml:id="org006">
+            <orgName type="American">
+               <desc>Used as a shorthand in this passage for Republican politicians in contrast to the immigrant-dominated Tammany Hall</desc>
+            </orgName>
+         </org>
+         <!-- etc.-->
+      </listOrg>
+   </standOff>
+</TEI>

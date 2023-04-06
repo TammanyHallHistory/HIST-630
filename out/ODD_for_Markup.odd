@@ -15,7 +15,7 @@
   </teiHeader>
   <text>
     <body>
-      <schemaSpec ident="George_Washington_Plunkitt_Project" start="TEI">
+      <schemaSpec ident="Markup_George_Washington_Plinkitt" start="TEI">
         <moduleRef key="header"/>
         <moduleRef key="core" include="title"/>
         <moduleRef key="tei"/>
@@ -50,13 +50,40 @@
                 <valItem ident="American">
                   <gloss>American</gloss>
                   <desc>Any term that indicates the referrent identifies as a native born American without immigrant identity</desc>
+                  </valItem>
                   <valItem ident="journ">
                     <gloss>Journalist</gloss>
-                    <desc>Indicates that the referrent was a journalist</desc>
+                    <desc>A member of the New York City Press corps</desc>
               </valItem>
             </valList>
           </attDef>
         </attList>
+      </elementSpec>
+      <elementSpec ident="placeName" module="namesdates" mode="change">
+        <content>
+          <textNode/>
+        </content>
+        <attList>
+          <attDef ident="ref" mode="change" usage="req"></attDef>
+        </attList>
+      </elementSpec>
+      <elementSpec ident="orgName" module="namesdates" mode="change">
+        <content>
+          <textNode/>
+        </content>
+        <attList>
+          <attDef ident="ref" mode="change" usage="req"></attDef>
+        </attList>
+      </elementSpec>
+      <elementSpec ident="p" module="core" mode="change">
+        <content>
+          <sequence preserveOrder="false">
+            <elementRef key="persName" minOccurs="0" maxOccurs="unbounded"/>
+            <elementRef key="placeName" minOccurs="0" maxOccurs="unbounded"/>
+            <elementRef key="orgName" minOccurs="0" maxOccurs="unbounded"/>
+            <textNode/>
+          </sequence>
+        </content>
       </elementSpec>
     </body>
   </text>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../Out/out/ODD_for_Markup.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader resp="#WR">
       <fileDesc>
@@ -116,7 +116,7 @@
             <p>I tell you frankly, though, how I have captured some of the <orgName ref="org004">Citizens'
                   Union's</orgName> young men. I have a plan that never fails. I watch the City
                Record to see when there's civil service examinations for good things. Then I take my
-               young <name ref="org004">Cit</name> in hand, tell him all about the good thing and get him worked
+               young <orgName ref="org004">Cit</orgName> in hand, tell him all about the good thing and get him worked
                up till he goes and takes an examination. I don't bother about him any more. It's a
                cinch that he comes back to me in a few days and asks to join <placeName ref="org001"
                   >Tammany Hall</placeName>. Come over to <placeName>Washington Hall</placeName>

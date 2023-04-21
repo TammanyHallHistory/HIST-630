@@ -3,13 +3,14 @@
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-   <teiHeader>
+   <teiHeader resp="#WR">
       <fileDesc>
          <titleStmt>
             <title>Plunkitt of Tammany Hall: A Series of Very Plain Talks on Very Practical
                Politics</title>
             <title>George Washington Plunkitt Project</title>
             <author>Patrick Grigsby</author>
+            <editor xml:id="WR">William Riordan</editor>
          </titleStmt>
          <publicationStmt>
             <publisher> HIST 630 Digital Humanities Class</publisher>

@@ -1,89 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-model href="../TEI%20Encoding%20Project/Markup/Markup_George_Washington_Plunkitt.xml" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<sch:schema xmlns:sch="http://purl.oclc.org/dsdl/schematron" queryBinding="xslt2" xmlns:sqf="http://www.schematron-quickfix.com/validator/process">
+<sch:ns uri="http://www.tei-c.org/ns/1.0" prefix="tei"/>
+
+<TEI 
+  xmlns:sch="http:/>/purl.oclc.org/dsdl/schematron"
+  xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>Title</title>
+        <title>George Washington Plunkitt TEI Project</title>
       </titleStmt>
       <publicationStmt>
         <p>Publication Information</p>
       </publicationStmt>
       <sourceDesc>
-        <p>Information about the source</p>
+        <p>This project seeks to examine the role of cultural and ethnic identity in the speeches of George Washington Plunkitt, a New York City machine politicians associated with the political machine, Tammany Hall</p>
       </sourceDesc>
     </fileDesc>
   </teiHeader>
   <text>
     <body>
-      <schemaSpec ident="Markup_George_Washington_Plinkitt" start="TEI">
+      <schemaSpec ident="Markup_George_Washington_Plunkitt" start="TEI">
         <moduleRef key="header"/>
-        <moduleRef key="core" include="title"/>
+        <moduleRef key="core" except="name"/>
         <moduleRef key="tei"/>
-        <moduleRef key="textstructure"/>
-        <moduleRef key="namesdates" />
+        <moduleRef key="textstructure" except="div1 div2 div3 div4 div5 div6 div7"/>
+        <moduleRef key="namesdates" include="persName placeName orgName"/>
       </schemaSpec>
-      <elementSpec module="namesdates" ident="persName" mode="change">
+      <constraint>
+        <sch:rule context="tei:teiHeader/@resp">
+          <sch:assert test=". = '#WR'"> This @resp attribute must be #WR.</sch:assert>
+        </sch:rule>
+          <sch:let name="Standoff" value="doc('https://github.com/TammanyHallHistory/HIST-630/blob/main/TEI%20Encoding%20Project/Standoff/Standoff_Plunkitt_of_Tammany_Hall.xml')"/>
+          <sch:let name="personIDs"
+            value="$Standoff//person/@xml:id"/>
+          <sch:let name="error" value="."/>
+          <sch:assert
+            test="@ref = $personIDs"
+            ><sch:value-of select="$error"/> You have made an error.
+            </sch:assert>
+      </constraint>
+            <sch:value-of select="personIDs"/>.
+      <elementSpec ident="persName" module="namesdates" mode="change">
         <content>
-          <sequence preserveOrder="true">
-          <elementRef key="forename"/>
-          <elementRef key="surname"/>
-          </sequence>
+          <sequence preserveOrder="false">
+            <elementRef key="persName"/>
+          </sequence> 
         </content>
-        <attList>
-          <attDef ident="type" mode="change" usage="req">
-            <datatype>
-              <dataRef key="teidata.enumerated"/>
-            </datatype>
-            <valList>
-              <valItem ident="polOrg">
-                <gloss>Political Organization</gloss>
-                <desc>A faction of the Republican or Democratic parties of New York City</desc>
-              </valItem>
-                <valItem ident="polOffice">
-                  <gloss>Political Office</gloss>
-                  <desc>Indicates that this person holds or held this political office</desc>
-              </valItem>
-              <valItem ident="Irish">
-                <gloss>Irish</gloss>
-                <desc>Any term that indicates the referrent is of Irish or Irish American descent</desc>
-                </valItem>
-                <valItem ident="American">
-                  <gloss>American</gloss>
-                  <desc>Any term that indicates the referrent identifies as a native born American without immigrant identity</desc>
-                  </valItem>
-                  <valItem ident="journ">
-                    <gloss>Journalist</gloss>
-                    <desc>A member of the New York City Press corps</desc>
-              </valItem>
-            </valList>
-          </attDef>
-        </attList>
+        <constraintSpec ident="persName" scheme="schematron">
+          <constraint>
+            <sch:rule context="persName">
+              <sch:let name="StandoffplaceIndex" value="doc('https://github.com/TammanyHallHistory/HIST-630/blob/main/TEI%20Encoding%20Project/Markup/Markup_George_Washington_Plunkitt.xml')"/>
+              <sch:let name="error" value="."/>
+              <sch:assert test="/@ref = $personIDs">
+                <sch:value-of select="personIDs"/>
+              </sch:assert>
+            </sch:rule>
+          </constraint>
+        </constraintSpec>
       </elementSpec>
       <elementSpec ident="placeName" module="namesdates" mode="change">
         <content>
           <textNode/>
         </content>
-        <attList>
-          <attDef ident="ref" mode="change" usage="req"></attDef>
-        </attList>
+        <constraintSpec ident="placeName" scheme="schematron">
+          <constraint>
+            <sch:rule context="placeName">
+              <sch:let name="StandoffplaceIndex" value="doc('https://github.com/TammanyHallHistory/HIST-630/blob/main/TEI%20Encoding%20Project/Markup/Markup_George_Washington_Plunkitt.xml'"/>
+              <sch:let name="error" value="."/>
+              <sch:assert test="/@ref = $placeIDs">
+                <sch:value-of select="placeIDs"/>
+              </sch:assert>
+            </sch:rule>
+          </constraint>
+        </constraintSpec>
       </elementSpec>
       <elementSpec ident="orgName" module="namesdates" mode="change">
         <content>
           <textNode/>
         </content>
-        <attList>
-          <attDef ident="ref" mode="change" usage="req"></attDef>
-        </attList>
-      </elementSpec>
-      <elementSpec ident="p" module="core" mode="change">
-        <content>
-          <sequence preserveOrder="false">
-            <elementRef key="persName" minOccurs="0" maxOccurs="unbounded"/>
-            <elementRef key="placeName" minOccurs="0" maxOccurs="unbounded"/>
-            <elementRef key="orgName" minOccurs="0" maxOccurs="unbounded"/>
-            <textNode/>
-          </sequence>
-        </content>
+        <constraintSpec ident="orgName" scheme="schematron">
+          <constraint>
+            <sch:rule context="orgName">
+              <sch:let name="StandoffplaceIndex" value="doc('https://github.com/TammanyHallHistory/HIST-630/blob/main/TEI%20Encoding%20Project/Markup/Markup_George_Washington_Plunkitt.xml'"/>
+              <sch:let name="error" value="."/>
+              <sch:assert test="/@ref = $orgIDs">
+                <sch:value-of select="orgIDs"/>
+              </sch:assert>
+            </sch:rule>
+          </constraint>
+        </constraintSpec>
       </elementSpec>
     </body>
   </text>

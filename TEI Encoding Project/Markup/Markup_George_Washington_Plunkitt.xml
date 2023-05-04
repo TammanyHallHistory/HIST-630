@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../Schematron/Schematron.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="file:/Users/Patrick/Desktop/HIST-630/Out/ODD_for_Markup.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="file:/Users/Patrick/Desktop/HIST-630/Out/out/ODD_for_Markup.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="file:/Users/Patrick/Desktop/HIST-630/Out/out/ODD_for_Markup.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-   <teiHeader resp="#WR">
+   <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Plunkitt of Tammany Hall: A Series of Very Plain Talks on Very Practical
                Politics</title>
             <title>George Washington Plunkitt Project</title>
             <author>Patrick Grigsby</author>
-            <editor xml:id="WR">William Riordan</editor>
+            <editor resp="WR">William Riordan</editor>
          </titleStmt>
          <publicationStmt>
             <publisher> HIST 630 Digital Humanities Class</publisher>

@@ -23,12 +23,12 @@
         <moduleRef key="tei"/>
         <moduleRef key="textstructure" except="div1 div2 div3 div4 div5 div6 div7"/>
         <moduleRef key="namesdates" include="persName placeName orgName"/>
-        <moduleRef key="tagdocs"/>
+        <moduleRef key="tagdocs" include="gi"/>
       </schemaSpec>
-      <elementSpec ident="teiHeader" module="header" mode="change">
+     <elementSpec ident="teiHeader" module="header" mode="change">
      <constraintSpec ident="header" scheme="schematron">
       <constraint>
-        <sch:rule context="tei:teiHeader/@resp">
+        <sch:rule context="tei:teiHeader:editor/@resp">
           <sch:assert test=". = '#WR'"> This @resp attribute must be #WR.</sch:assert>
         </sch:rule>
         </constraint>
